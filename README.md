@@ -53,7 +53,7 @@ The form includes:
 - Both controlled and uncontrolled input handling.
 - Integration with TypeScript for type safety.
 
-The components are located in the `src/components` directory, and the main form logic resides in the `src/hooks/useForm.tsx` file.
+The components are located in the `src/components` directory, and the main form logic resides in the `src/hooks/useForm.ts` file.
 
 ## Technologies Used
 
