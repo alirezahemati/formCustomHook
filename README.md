@@ -1,27 +1,72 @@
-# React + TypeScript + Vite
+# Custom Hook Form for Registering Users
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository demonstrates a simple user registration form implemented using a custom hook in a React application. The form handles both controlled and uncontrolled inputs while using TypeScript and Vite for the development environment.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ensure you have the following installed in your development environment:
 
-## Expanding the ESLint configuration
+- Node.js
+- npm (Node Package Manager) or Yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To set up and run the project:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. Clone this repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   git clone https://github.com/alirezahemati/formCustomHook.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd custom-hook-registration-form
+   ```
+
+3. Install the necessary dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open your browser and visit `http://localhost:5173` to see the application.
+
+## Usage
+
+The project consists of a simple user registration form that collects user details such as name, email, and password. It utilizes a custom hook to manage form state and validation.
+
+The form includes:
+
+- Proper validation for each input field.
+- Both controlled and uncontrolled input handling.
+- Integration with TypeScript for type safety.
+
+The components are located in the `src/components` directory, and the main form logic resides in the `src/hooks/useForm.tsx` file.
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+
+## Folder Structure
+
+- `src/components/`: Contains React components.
+- `src/hooks/`: Houses the custom hook for form management.
+- `types.d.ts`: Defines TypeScript types and interfaces.
+
+## Contributing
+
+Feel free to contribute by opening issues or creating pull requests for improvements or bug fixes. Make sure to follow the established code formatting and naming conventions.
